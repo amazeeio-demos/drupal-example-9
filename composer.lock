@@ -2321,16 +2321,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "8.3.2",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "60306a27347f6c69517dc2d91bb2fd5d1a41abec"
+                "reference": "8c81046290adc38b76cbbc7431eafae060db35a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/60306a27347f6c69517dc2d91bb2fd5d1a41abec",
-                "reference": "60306a27347f6c69517dc2d91bb2fd5d1a41abec",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/8c81046290adc38b76cbbc7431eafae060db35a2",
+                "reference": "8c81046290adc38b76cbbc7431eafae060db35a2",
                 "shasum": ""
             },
             "require": {
@@ -2340,11 +2340,12 @@
                 "php": ">=5.4.5",
                 "psr/log": "~1.0",
                 "psy/psysh": "~0.6",
-                "symfony/console": "~2.7|^3",
-                "symfony/event-dispatcher": "~2.7|^3",
-                "symfony/finder": "~2.7|^3",
-                "symfony/var-dumper": "~2.7|^3",
-                "symfony/yaml": "~2.3|^3",
+                "symfony/console": "~2.7|^3|^4.4",
+                "symfony/event-dispatcher": "~2.7|^3|^4.4",
+                "symfony/finder": "~2.7|^3|^4.4",
+                "symfony/process": "~2.7|^3|^4.4",
+                "symfony/var-dumper": "~2.7|^3|^4.4|^5",
+                "symfony/yaml": "~2.3|^3|^4.4",
                 "webflo/drupal-finder": "^1.1.0",
                 "webmozart/path-util": "~2"
             },
@@ -2430,19 +2431,25 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2019-11-26T22:34:50+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/weitzman",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-14T20:18:50+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -2781,6 +2788,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -2827,6 +2835,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -7422,5 +7431,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
