@@ -16,6 +16,7 @@ tasks:
             if tables=$(drush sqlq 'show tables;') && [ -z "$tables" ] && [[ "$LAGOON_GIT_BRANCH" != "master" ]]; then
                 # no drupal installed, sync DB from master branch
                 drush -y sql-sync @master @self
+                drush -y cr
             fi
         service: cli
         shell: bash
